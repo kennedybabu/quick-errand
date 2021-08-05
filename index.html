@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="styles.css">
     <title>Rabbit || Errand</title>
 </head>
+
 <body>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
     <section class="hero">
         <nav id="nav">
             <h3>rabbit <span>errand</span></h3>
@@ -25,25 +32,60 @@
                 <div class="user-heading">
                     <h4>Help when you need it,<br>at your fingertips</h4>
                 </div>
-                <div class="user-p">Get help around the house from a trusted Tasker. From handyman<br>work and furniture assembly to moving, yardwork, and more.</div>
+                <div class="user-p">Get help around the house from a trusted Tasker. From handyman<br>work and furniture
+                    assembly to moving, yardwork, and more.</div>
                 <div class="user-input mt-3">
-                    <form class="row g-3">                      
+                    <form class="row g-3">
                         <div class="col-auto">
-                          <label for="user-service" class="visually-hidden">Password</label>
-                          <input type="text" class="form-control" id="user-service" placeholder="I need help with...">
+                            <label for="user-service" class="visually-hidden">Password</label>
+                            <input type="text" class="form-control" id="user-service" placeholder="I need help with...">
                         </div>
                         <div class="col-auto">
-                          <button type="submit" class="btn btn-primary mb-3">Get help now</button>
+                            <button type="submit" class="btn btn-primary mb-3">Get help now</button>
                         </div>
-                      </form>
-                </div>                
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- about us section -->
+        <div id="about">
+            <div style="background-color: grey-green---rgb(241, 250, 238);">
+                <br>
+                <h2>About Us</h2>
+                <br>
+                <div class="slide">
+                    <input type="radio" name="position" checked />
+                    <input type="radio" name="position" />
+                    <input type="radio" name="position" />
+                    <input type="radio" name="position" />
+                    <input type="radio" name="position" />
+                    <main id="carousel">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <main>
+                </div>
+                <div class="about-us">
+                    <p>Rabbit errand allows it's users to access any products or services they need from various parts
+                        of
+                        the
+                        city within a short time and from the comfort of their homes or places of work.</p>
+                    <p>Our aim is to help those with busy schedules and to also make peoples work easier by delivering
+                        what they
+                        need wherever they are.</p>
+                    <p>Our services are affordable and available to all.</p>
+                </div>
             </div>
         </div>
 
+        <!-- end of about us section -->
         <div class="partners">
             <div class="reviews">
                 <div class="stars">
-                    <img src="https://www.tcs.cam.ac.uk/wp-content/uploads/2019/06/four-and-half-stars-actual.png" alt="stars">
+                    <img src="https://www.tcs.cam.ac.uk/wp-content/uploads/2019/06/four-and-half-stars-actual.png"
+                        alt="stars">
                     1.1 Million Reviews
                 </div>
             </div>
@@ -55,14 +97,17 @@
             </div>
             <div class="app">
                 <div class="android">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI2OtNhT4QEQ14FkKZOk--WHTrO4nzsvw9QUrW5R_4lNvmA6I43dlT9Bze68eRp2A4tg&usqp=CAU" alt="playstore">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI2OtNhT4QEQ14FkKZOk--WHTrO4nzsvw9QUrW5R_4lNvmA6I43dlT9Bze68eRp2A4tg&usqp=CAU"
+                        alt="playstore">
                 </div>
                 <div class="ios">
-                    <img src="https://www.logo.wine/a/logo/App_Store_(iOS)/App_Store_(iOS)-Badge-Alternative-Logo.wine.svg" alt="app store">
+                    <img src="https://www.logo.wine/a/logo/App_Store_(iOS)/App_Store_(iOS)-Badge-Alternative-Logo.wine.svg"
+                        alt="app store">
                 </div>
-            
+
             </div>
-        </div> 
+        </div>
     </section>
 </body>
+
 </html>
