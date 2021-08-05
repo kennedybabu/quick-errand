@@ -41,7 +41,7 @@
                             <input type="text" class="form-control" id="user-service" placeholder="I need help with...">
                         </div>
                         <div class="col-auto">
-                            <button type="submit" class="btn btn-primary mb-3">Get help now</button>
+                            <button id="user-help" type="submit" class="btn btn-primary mb-3">Get help now</button>
                         </div>
                     </form>
                 </div>
@@ -94,7 +94,7 @@
 
                     </div>
                     <div class="services-txt">
-                        <p>PLumbing/Construction</p>
+                        <p>Plumbing/Construction</p>
                         <a href="#form">Get Services</a>
                     </div>
                 </div>
@@ -133,26 +133,29 @@
                         <label for="location">Select your area</label><br>
                         <select name="location" class="custom-select mr-sm-2" id="location">
                             <option selected>Select your area...</option>
-                            <option value="pepporoni">Pepporoni Pizza</option>
-                            <option value="hawaiian">Hawaiian Pizza</option>
-                            <option value="margherita">Margherita Pizza</option>
-                            <option value="bbq">BBQ Chicken</option>
+                            <option value="500">CBD</option>
+                            <option value="1000">Muthaiga</option>
+                            <option value="700">Runda</option>
+                            <option value="800">Kilimani</option>
+                            <option value="1100">Kileleshwa</option>
+                            <option value="1500">Muthaiga</option>
+                            <option value="1100">Outskirts of Nairobi</option>
                         </select> <br>
 
                         <label for="help">Help Category</label><br>
                         <select name="help" class="custom-select mr-sm-2" id="help">
                             <option selected>Help Category</option>
-                            <option value="pepporoni">Pepporoni Pizza</option>
-                            <option value="hawaiian">Hawaiian Pizza</option>
-                            <option value="margherita">Margherita Pizza</option>
-                            <option value="bbq">BBQ Chicken</option>
+                            <option value="cleaning">Cleaning services</option>
+                            <option value="delivery">Office/home delivery</option>
+                            <option value="shopping">Grocery/food shopping</option>
+                            <option value="plumbing">Plumbing/Construction</option>
                         </select>
 
                         <div class="made-amount my-2">
-                            <h5 class="amount">
-                               <span> ksh.500</span>
+                            <h5 id="amount" class="amount">
+                               <span> ksh.500 per hr</span>
                             </h5>
-                            <p>Per hour</p>
+                            <!-- <p>Per hour</p> -->
                         </div>
                     </div>
                     <button id="submit" type="submit">Get started</button>
@@ -229,7 +232,7 @@
             <div class="footer-emai-form">
                 <h2>join our newsletter</h2>
                 <input type="Email" placeholder="enter your email address" id="footer-email">
-                <input type="submit" value="sign up" id="footer-email-btn">
+                <input value="sign up" id="footer-email-btn">
             </div>
 
         </div>
@@ -237,6 +240,10 @@
     </div>
 
     <!-- end of joans section -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="app.js"></script>
 </body>
 
 </html>
