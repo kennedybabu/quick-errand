@@ -1,0 +1,93 @@
+:root {
+    --red: rgb(230, 57, 70);
+    --grey: rgb(241, 250, 238);
+    --blue: rgb(29, 53, 87);
+}
+.hero {
+    min-height: 100vh;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+    background-color: var(--blue);
+    color: var(--grey);
+}
+
+#nav a {
+    text-decoration: none;
+    color: var(--grey);
+    margin: 4rem;
+    border: 2px solid var(--red);
+    border-radius: 20px;
+    padding: .5rem 1rem;
+}
+
+span {
+    color: var(--red);
+}
+
+
+.hero-container {
+    background-image: url(https://images.unsplash.com/photo-1600518464441-9154a4dea21b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1786&q=80);
+    background-size: cover;
+    height: 70vh;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-need {
+    position: absolute;
+    background-color: white;
+    height: 60%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 4px;
+}
+
+body > section > div > div > div.user-input.mt-3 > form > div:nth-child(2) > button {
+    background-color: var(--red);
+}
+
+body > section > div > div > div.user-input.mt-3 > form > div:nth-child(2) > button:focus,
+body > section > div > div > div.user-input.mt-3 > form > div:nth-child(2) > button:active {
+    outline: none;
+}
+
+.partners {
+    height: 20vh;
+    display: flex; 
+    justify-content: space-around;
+}
+
+.app,
+.reviews,
+.partnered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partnered img {
+    width: 300px;
+    height: 150px;
+}
+
+.app img {
+    width: 150px;
+    height: 80px;
+}
+
+.reviews img {
+    width: 250px;
+    height: 60px 
+}
