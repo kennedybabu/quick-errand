@@ -1,6 +1,6 @@
 ## Rabbit Errand
 
-The site allows one to delegate an errand to a tasker who chooses the errands depending on thier location and type of errand.
+The site allows one to delegate an errand to a tasker who chooses the errands depending on their location and type of errand.
 
 
 # Installation
