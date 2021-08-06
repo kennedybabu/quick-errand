@@ -105,11 +105,13 @@ body > section > div > div > div.user-input.mt-3 > form > div:nth-child(2) > but
 
 #about{
     text-align: center;
-    font-size: 20px;
+    font-size: 1rem;
     color: black;
     font-family: 'Poppins', sans-serif;
+    margin-top: -1rem;
 }    
 .slide{
+    margin-top: -1rem;
     height: auto;
     display: grid;
     grid-template-rows: 400px 90px;
@@ -227,8 +229,8 @@ background-image: url("https://images.unsplash.com/photo-1505798577917-a65157d33
 .footer-container {
     background-color:rgb(29, 53 , 87 );
     padding-bottom: 4rem;
-    height: 100%;
-    width: 100%;
+    height: auto;
+    max-width: 100%;
 }
 
 .footer {
@@ -306,6 +308,7 @@ body > div.footer-container > div > div.footer-emai-form > h2 {
     color: white;
     font-size: 1rem;
     border-radius: 20px;
+    text-align: center;
 }
 
 
@@ -504,4 +507,146 @@ body > section.services > div.tasker > div.right-txt.container {
     }
 
 
+}
+
+@media screen and (max-width: 1080px) {
+    body > section.hero > div.partners > div.reviews > div > img {
+        width: 160px;
+        height: 40px;
+    }
+
+    body > section.hero > div.partners > div.partnered > div > img {
+        width: 200px;
+        height: 80px;
+    }
+
+    body > section.hero > div.partners > div.app > div.android > img {
+        width: 130px;
+        height: 60px;
+    }
+
+    body > section.hero > div.partners > div.app > div.ios > img {
+        width: 130px;
+        height: 60px;
+    }
+
+    body > section.hero > div.hero-container > div > div.user-heading > h4 {
+        font-size: 1.1rem;
+    }
+
+    body > section.hero > div.hero-container > div > div.user-p {
+        font-size: .8rem;
+    }
+
+    body > section.services > div.tasker > div.right-txt.container > h3 {
+        font-size: 1.3rem;
+    }
+
+    #about > div > h2 {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 860px) {
+    body > section.hero > div.hero-container > div > div.user-input.mt-3 > form {
+        align-items: center;
+    }
+
+    #user-help {
+        margin: 0 auto;
+    }
+
+    body > section.services > div.services-container.px-auto > div > div.services-icon.three > div.services-img,
+    body > section.services > div.services-container.px-auto > div > div.services-icon.four > div.services-img {
+        margin-top: 1rem;
+    }
+
+    .tasker {
+        margin-top: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    body > section.services > div.services-container.px-auto > div > div.services-icon.four > div.services-img {
+        margin-top: 1rem;
+    }
+
+    .tasker {
+        margin-top: 2rem;
+    }
+
+    .footer-heading h1 {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    body > section.services > div.services-container.px-auto > div > div.services-icon.three > div.services-img {
+        margin-top: 1rem;
+    }
+
+    #nav > ul > a {
+        font-size: 12px;
+    }
+
+    #nav > h3 {
+        font-size: 20px;
+    }
+
+    body > section.hero > div.hero-container > div > div.user-input.mt-3 > form {
+        flex-direction: row;
+    }
+
+    body > section.hero > div.hero-container > div > div.user-input.mt-3 > form > div {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body > section.hero > div.hero-container > div {
+        height: 100%;
+        width: 100%;
+        color: black;
+        background-position: center;
+        background-size: cover;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.281), rgba(255, 255, 255, 0.781)), url(https://images.unsplash.com/photo-1600518464441-9154a4dea21b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1786&q=80);
+    }
+
+    .left-image {
+        display: none;
+    }
+
+    .right-txt {
+        height: auto;
+        width: 100%;
+        color: black;
+        background-position: center;
+        background-size: cover;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.281), rgba(255, 255, 255, 0.781)), url(https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+    }
+
+    .tasker {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    body > section.services > div.tasker > div.right-txt.container {
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width: 576px){
+    body > section.services > div.tasker > div.right-txt.container {
+        min-width: 100%;
+        height: auto;
+        
+    }   
+    
+    .left-image {
+        display: none;
+    }
 }
