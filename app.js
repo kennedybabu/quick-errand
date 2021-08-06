@@ -16,10 +16,16 @@ $("#form").submit(function(event){
     
     let appliedTasker = new UserHelp(taskerLocation, helpCategory)
 
-    document.getElementById("amount").innerHTML = `Ksh. ${taskerLocation} per hr`
+    let parsedLocation = parseInt(taskerLocation)
+    let parsedCategory = parseInt(helpCategory)
+
+    // console.log(parsedLocation + parsedCategory)
+    let totalAmount = parsedCategory + parsedLocation
+
+    document.getElementById("amount").innerHTML = `Ksh. ${totalAmount} per hr`
 
 
-    console.log(appliedTasker)
+    // console.log(appliedTasker)
 
 
 })
