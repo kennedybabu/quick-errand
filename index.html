@@ -1,14 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
     <title>Rabbit || Errand</title>
 </head>
+
 <body>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <section class="hero">
+        <nav id="nav">
+            <h3>rabbit <span>errand</span></h3>
+
+            <ul>
+                <a href="">Home</a>
+                <a href="">Services</a>
+                <a href="">Contact</a>
+            </ul>
+        </nav>
+
+        <div class="hero-container">
+            <div class="user-need">
+                <div class="user-heading">
+                    <h4>Help when you need it,<br>at your fingertips</h4>
+                </div>
+                <div class="user-p">Get help around the house from a trusted Tasker. From handyman<br>work and furniture
+                    assembly to moving, yardwork, and more.</div>
+                <div class="user-input mt-3">
+                    <form class="row g-3">
+                        <div class="col-auto">
+                            <label for="user-service" class="visually-hidden">Password</label>
+                            <input type="text" class="form-control" id="user-service" placeholder="I need help with...">
+                        </div>
+                        <div class="col-auto">
+                            <button id="user-help" type="submit" class="btn btn-primary mb-3">Get help now</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="partners">
+            <div class="reviews">
+                <div class="stars">
+                    <img src="https://www.tcs.cam.ac.uk/wp-content/uploads/2019/06/four-and-half-stars-actual.png"
+                        alt="stars">
+                    1.1 Million Reviews
+                </div>
+            </div>
+            <div class="partnered">
+                <div class="div">
+                    <img src="https://i0.wp.com/logodix.com/logo/2164598.png?resize=600%2C9999&ssl=1" alt="safaricom">
+                </div>
+                Our Partner
+            </div>
+            <div class="app">
+                <div class="android">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI2OtNhT4QEQ14FkKZOk--WHTrO4nzsvw9QUrW5R_4lNvmA6I43dlT9Bze68eRp2A4tg&usqp=CAU"
+                        alt="playstore">
+                </div>
+                <div class="ios">
+                    <img src="https://www.logo.wine/a/logo/App_Store_(iOS)/App_Store_(iOS)-Badge-Alternative-Logo.wine.svg"
+                        alt="app store">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="services-container px-auto">
+            <div class="container row">
+                <div class="services-icon one">
+                    <div class="services-img">
+
+                    </div>
+                    <div class="services-txt">
+                        <p>Office/home delivery</p>
+                        <a href="#form">Get Services</a>
+                    </div>
+                </div>
+
+                <div class="services-icon two">
+                    <div class="services-img">
+
+                    </div>
+                    <div class="services-txt">
+                        <p>Plumbing/Construction</p>
+                        <a href="#form">Get Services</a>
+                    </div>
+                </div>
+
+                <div class="services-icon three">
+                    <div class="services-img">
+
+                    </div>
+                    <div class="services-txt">
+                        <p>Grocery/Home shopping</p>
+                        <a href="#form">Get Services</a>
+                    </div>
+                </div>
+
+                <div class="services-icon four">
+                    <div class="services-img">
+
+                    </div>
+                    <div class="services-txt">
+                        <p>Gardening/Lawnmow</p>
+                        <a href="#form">Get Services</a>
+                    </div>
+                </div>
+            </div>            
+        </div>
+
+        <div class="tasker">
+            <div class="left-image"></div>
+            <div class="right-txt container">
+                <h3>Earn money in your local area</h3>
+                <p>See how much you can make tasking.</p>  
+                
+                
+                <form action="#" id="form">
+                    <div class="col">
+                        <label for="location">Select your area</label><br>
+                        <select name="location" class="custom-select mr-sm-2" id="location">
+                            <option selected>Select your area...</option>
+                            <option value="500">CBD</option>
+                            <option value="1000">Muthaiga</option>
+                            <option value="700">Runda</option>
+                            <option value="800">Kilimani</option>
+                            <option value="1100">Kileleshwa</option>
+                            <option value="1500">Muthaiga</option>
+                            <option value="1100">Outskirts of Nairobi</option>
+                        </select> <br>
+
+                        <label for="help">Help Category</label><br>
+                        <select name="help" class="custom-select mr-sm-2" id="help">
+                            <option selected>Help Category</option>
+                            <option value="1500">Cleaning services</option>
+                            <option value="1000">Office/home delivery</option>
+                            <option value="1200">Grocery/food shopping</option>
+                            <option value="2000">Plumbing/Construction</option>
+                        </select>
+
+                        <div class="made-amount my-2">
+                            <h5 id="amount" class="amount">
+                               <span> ksh.500 per hr</span>
+                            </h5>
+                            <!-- <p>Per hour</p> -->
+                        </div>
+                    </div>
+                    <button id="submit" type="submit">Get started</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
     
+        <!-- about us section -->
+        <div id="about">
+            <div style="background-color: grey-green---rgb(241, 250, 238);">
+                <h2>About Us</h2>
+                <div class="slide">
+                    <input type="radio" name="position" checked />
+                    <input type="radio" name="position" />
+                    <input type="radio" name="position" />
+                    <input type="radio" name="position" />
+                    <input type="radio" name="position" />
+                    <main id="carousel">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <main>
+                </div>
+                <div class="about-us">
+                    <p>Rabbit errand allows it's users to access any products or services they need from various parts
+                        of
+                        the
+                        city within a short time and from the comfort of their homes or places of work.</p>
+                    <p>Our aim is to help those with busy schedules and to also make peoples work easier by delivering
+                        what they
+                        need wherever they are.</p>
+                    <p>Our services are affordable and available to all.</p>
+                </div>
+            </div>
+        </div>
+
+    <!-- end of about us section --> 
+      
+
+    <!-- joans section -->
+    <div class="footer-container">
+        <div class="footer">
+            <div class="footer-heading footer-1">
+                <h1>About us</h1>
+                <a href="#">Blog</a>
+                <a href="#">Demo</a>
+                <a href="#">customers</a>
+                <a href="#">investers</a>
+                <a href="#">Terms of service</a>
+            </div>
+            <div class="footer-heading footer-1">
+                <h1>Contact us</h1>
+                <a href="#">Jobs</a>
+                <a href="#">support</a>
+                <a href="#">contact</a>
+                <a href="#">sponsership</a>
+            </div>
+
+            <div class="footer-heading footer-1">
+                <h1>social media</h1>
+                <a href="#">Instagram</a>
+                <a href="#">Faceoook</a>
+                <a href="#">Youtube</a>
+                <a href="#">Twitter</a>
+                <a href="#">Terms of service</a>
+            </div>
+
+            <div class="footer-emai-form">
+                <h2>join our newsletter</h2>
+                <input type="Email" placeholder="enter your email address" id="footer-email">
+                <input value="sign up" id="footer-email-btn">
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- end of joans section -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="app.js"></script>
 </body>
+
 </html>
